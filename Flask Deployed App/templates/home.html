@@ -1,0 +1,82 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends 'base.html' %}
+{% block pagetitle %}
+Greencheck Disease Detector
+{% endblock pagetitle %}
+{% block body %}
+<style>
+  body{
+    overflow-x: hidden;
+  }
+  /* Default styles for all screen sizes */
+
+/* Example: Styles for desktop or larger screens */
+/* Adjust as needed for your design */
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Additional styles for larger screens */
+}
+
+/* Styles for tablets or medium-sized screens */
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 14px;
+  }
+
+  /* Adjust styles for medium-sized screens */
+}
+
+/* Styles for small screens (e.g., mobile devices) */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  /* Adjust styles for small screens */
+}
+
+</style>
+<div class='mobile p-5'>
+  <div class="row mb-5 text-center text-white">
+    <div class="col-lg-10 mx-auto">
+      <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color:red;"><b>🍁Welcome to GreenCheck🌳</b></h1>
+
+    </div>
+</div>
+</div>
+
+<div class="row mb-5 text-center text-white laptop">
+
+        <p class="lead" style="font-weight: 500;color: black;">Powered By AI to Easily Detect Disease In Leaves and Trees</p>
+
+</div>
+
+<center class="laptop">
+    <a href="/aiDoc">
+    <button class = "bttn-pill bttn-lg btn-success"><b style="color: black;">AI Doctor</b></button>
+</a>
+</center>
+<div class="row p-5 laptop">
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 95%;height: 97%;">
+          <img
+                        src="static/tree2.jpg"
+                        height="300" alt="" width="200" class="d-block mx-auto mb-4 rounded-pill" >
+          <center><p class="lead" style="font-weight: 500;color: black;">Check Your Tree Health On The Go!</p></center>
+        </div>
+    </div>
+
+</div>
+
+
+
+{% endblock body %}
